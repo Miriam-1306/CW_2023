@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N&M STYLE</title>
+    <link rel="icon" href="./logo.png" type="image/x-png">
+</head>
+<body>
+  <h1><center>N&M STYLE</center></h1>
+  <h2>¡Bienvenida a nuestra tienda online, donde podras elegir tus proximos
+    estrenos desde la comodidad de tu casa!
+  </h2>
+  <table border="3" align="center" style="border-collapse:inherit;" cellpadding="20px">
+    <thread>
+        <tr>
+            <th>Pantalones</th>
+            <th>Blusas</th>
+            <th>Shorts</th>
+            <th>Sueter</th>
+            <th>Conjuntos</th>
+            <th>Vestidos</th>
+        </tr>
+    </thread>
+    <tbody>
+        <td><img src="pantalo.jpg" alt="pas" width="130" height="200"></td>
+        <td><img src="blusas.jpg" alt="gu" width="150" height="180"></td>
+        <td><img src="short.jpg" alt="flor" width="120" height="180"></td>
+        <td><img src="sueter.jpg" alt="fresa" width="165" height="180"></td>
+        <td><img src="conjuntos.jpg" alt="morado" width="110" height="160"></td>
+        <td><img src="vestido.jpg" alt="azul" width="170" height="167"></td>
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <strong>Escoge tu producto favorito</strong>
+
+
+  <form>
+    <fieldset>
+        <legend>Compra</legend>  
+         <label for="productos"><i>Productos</i></label>
+         <select id="productos">
+            <optgroup label="Productos">
+                <option value="pantalon">Pantalón</option>
+                <option value="blusa">Blusa</option>
+                <option value="short">Shorts</option>
+                <option value="sueter">Sueter</option>
+                <option value="conjunto">Conjuntos</option>
+                <option value="Vestido">Vestidos</option>
+            </optgroup>
+         </select>
+    <br>
+    <br>
+    <i>Talla</i>
+    <br>
+    <input type="radio" name="talla" value="chica">CH<br>
+    <input type="radio" name="talla" value="mediana">M<br>
+    <input type="radio" name="talla" value="grande">G<br>
+    <input type="radio" name="talla" value="extra">EXG
+    <br> <br>
+    <i>Color</i>
+    <br>
+    <input type="color">
+    <br> <br>
+    <i>Piezas</i>
+    <input type="text"> <br> <br>
+    <button type="submit">Guardar cambios</button>
+    <button type="reset">Borrar</button>
+    </fieldset>
+    <br> 
+    <br> 
+    <br>
+    <strong>Datos de envio</strong>
+    <fieldset>
+      <legend>Envio</legend>
+      <i>Nombre completo</i>
+      <input type="text">
+      <br>
+      <br>
+      <i>Correo electronico</i>
+      <input type="email" placeholder="maria@gmail.com">
+      <br> <br>
+      <i>Tel:</i>
+      <input type="tel" placeholder="55443298">
+      <br> <br>
+      <label for="estado"><i>Estado</i></label>
+      <select id="estado">
+        <option value="cdmx">CDMX</option>
+        <option value="edo">EDOMEX</option>
+        <option value="cuerna">Morelos</option>
+        <option value="oaxaca">Oaxaca</option>
+        <option value="mont">Monterrey</option>
+        <option value="tj">Tijuana</option>
+        <option value="guerrero">Guerrero</option>
+        <option value="zacatecas">Zacatecas</option>
+        <option value="bajcalifornia">Baja Clifornia</option>
+        <option value="bajcaliforniasur">Baja California Sur</option>
+        <option value="chiapas">Chiapas</option>
+      </select>
+      <br>
+      <br>
+      <i>Fecha preferente para envio:</i>
+      <input type="datetime-local">
+      <br> 
+      <br>
+      <i>Domicilio:</i>
+      <input type="search">
+      <br> 
+      <br>
+      <i>Señas particulares del domicilio:</i>
+      <br>
+      <textarea cols="70" rows="13" placeholder="Escribe aquí..."></textarea>
+    </fieldset>
+    <br>
+    <button type="submit">Terminar compra</button>
+  </form>
+</body>
+</html>
