@@ -35,22 +35,22 @@
                 "<td>";
                     switch ($artist) {
                         case 'Luis Miguel':
-                            echo '<td><img src="luismi.jpg" alt="luism" width="150" height="180"></td>';
+                            echo '<td rowspan="3"><img src="luismi.jpg" alt="luism" width="150" height="180"></td>';
                             break;
                         case 'Danna Paola':
-                            echo '<td><img src="danna.jpg" alt="dann" width="150" height="180"></td>';
+                            echo '<td rowspan="3"><img src="danna.jpg" alt="dann" width="150" height="180"></td>';
                             break;
                         case 'Jackson Wang':
-                            echo '<td><img src="jackson.jpg" alt="bbs" width="190" height="160"></td>';
+                            echo '<td rowspan="3"><img src="jackson.jpg" alt="bbs" width="190" height="160"></td>';
                             break;
                         case 'Blackpink':
-                            echo '<td><img src="pinks.jpg" alt="blackp" width="190" height="150"></td>';
+                            echo '<td rowspan="3"><img src="pinks.jpg" alt="blackp" width="190" height="150"></td>';
                             break;
                         case 'Morat':
-                            echo '<td><img src="morat.jpg" alt="mor" width="170" height="180"></td>';
+                            echo '<td rowspan="3"><img src="morat.jpg" alt="mor" width="170" height="180"></td>';
                             break;
                         case 'Chayanne':
-                            echo '<td><img src="chay.jpg" alt="chayy" width="170" height="180"></td>';
+                            echo '<td rowspan="3"><img src="chay.jpg" alt="chayy" width="170" height="180"></td>';
                             break;
                     }
                 "</td>";
@@ -58,26 +58,53 @@
                 echo "<tr>";
                         echo "<td>", $lugar ,"</td>";
                         echo "<td>", $zon ,"</td>";
-                        echo "<td>", $extrass ,"</td>";
+                        switch ($extrass) {
+                            case 'Estacionamiento en el recinto':
+                                echo "<td>",$extrass,"</td>";
+                                break;
+                        }
+                        echo "<td rowspan='2'>", $extrass ,"</td>";
                 echo "</tr>";
                 "<td>";
                     switch ($lugar) {
                         case 'Auditorio Nacional':
-                            echo '<td><img src="audiNacional.jpg" alt="nacional" width="150" height="180"></td>';
+                            echo '<td><img src="audiNacional.jpg" alt="nacional" width="185" height="150"></td>';
                             break;
                         case 'Foro Sol':
-                            echo '<td><img src="forsol.jpg" alt="forosol" width="150" height="180"></td>';
+                            echo '<td><img src="forsol.jpg" alt="forosol" width="250" height="140"></td>';
                             break;
-                        case 'Palacio de los deportes':
-                            echo '<td><img src="depoertes.jpg" alt="palacio" width="190" height="160"></td>';
+                        case 'Palacio de los Deportes':
+                            echo '<td><img src="deportes.jpg" alt="palacio" width="190" height="160"></td>';
                             break;
-                        case 'Arena Ciudad de México':
+                        case 'Arena CDMX':
                             echo '<td><img src="arena.jpg" alt="arenac" width="190" height="150"></td>';
                             break;
                     }
                 "</td>";
+                "<td>";
+                    switch ($zon) {
+                        case 'VIP':
+                            echo '<td><img src="vip.png" alt="nice" width="185" height="150"></td>';
+                            break;
+                        case 'General B':
+                            echo '<td><img src="general.png" alt="general" width="150" height="180"></td>';
+                            break;
+                        case 'Zona B1':
+                            echo '<td><img src="bardaB1.jpg" alt="B1" width="190" height="160"></td>';
+                            break;
+                        case 'Zona B2':
+                            echo '<td><img src="bardaB2.jpg" alt="B2" width="190" height="150"></td>';
+                            break;
+                        case 'Zona C1':
+                            echo '<td><img src="bardaC1.png" alt="C1" width="190" height="150"></td>';
+                            break;
+                        case 'Zona C2':
+                            echo '<td><img src="bardaC2.jpg" alt="arenac" width="190" height="150"></td>';
+                            break;
+                    }
+                "</td>";
             echo "</tbody>";
-        echo "</table>";   
+        echo "</table>";
         echo '<br> <br> <br>';
     } 
 
