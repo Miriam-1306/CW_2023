@@ -60,8 +60,30 @@
                         echo "<td>", $zon ,"</td>";
                         echo "<td>", $extrass ,"</td>";
                 echo "</tr>";
+                "<td>";
+                    switch ($artist) {
+                        case 'Luis Miguel':
+                            echo '<td><img src="luismi.jpg" alt="luism" width="150" height="180"></td>';
+                            break;
+                        case 'Danna Paola':
+                            echo '<td><img src="danna.jpg" alt="dann" width="150" height="180"></td>';
+                            break;
+                        case 'Jackson Wang':
+                            echo '<td><img src="jackson.jpg" alt="bbs" width="190" height="160"></td>';
+                            break;
+                        case 'Blackpink':
+                            echo '<td><img src="pinks.jpg" alt="blackp" width="190" height="150"></td>';
+                            break;
+                        case 'Morat':
+                            echo '<td><img src="morat.jpg" alt="mor" width="170" height="180"></td>';
+                            break;
+                        case 'Chayanne':
+                            echo '<td><img src="chay.jpg" alt="chayy" width="170" height="180"></td>';
+                            break;
+                    }
+                "</td>";
             echo "</tbody>";
-        echo "</table>";
+        echo "</table>";   
         echo '<br> <br> <br>';
     } 
 
