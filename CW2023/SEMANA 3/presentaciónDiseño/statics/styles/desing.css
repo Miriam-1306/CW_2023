@@ -1,0 +1,11 @@
+body{
+    background-image: url(../media/img/flores.jpg) ;
+}
+a.enlace:hover {
+    background-color: blueviolet;
+    color:aquamarine
+}
+a.enlacePro:hover {
+    background-color: blueviolet;
+    color:aquamarine
+}
