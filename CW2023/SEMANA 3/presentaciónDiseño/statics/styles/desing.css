@@ -1,11 +1,37 @@
 body{
-    background-image: url(../media/img/flores.jpg) ;
+    background-image: url(../media/img/agua.jpg) ;
+    background-size: cover;
 }
-a.enlace:hover {
+h2{
     background-color: blueviolet;
     color:aquamarine
 }
-a.enlacePro:hover {
-    background-color: blueviolet;
+.enlacePro {
+    background-color: #8a2be2;
     color:aquamarine
+}
+.p{
+    position: absolute;
+    top: 10vh;
+    background-color: bisque;
+}
+#linea{
+    background-color: #ffe4c4;
+    color:#000000;
+    margin: 2vw;
+    border: 1rem solid #8a2be2;
+}
+#dibujo{
+    margin:auto;
+    width: 100px;
+    height: 100px;
+    background-color: #a6e6a9;
+    border-radius: 0% 50% 0% 50%;
+}
+#pel{
+    text-align: justify;
+    width: 100px;
+    height: 100px;
+    background-color: #e4a6e6;
+    border-radius: 0% 60% 30% 50%;
 }
